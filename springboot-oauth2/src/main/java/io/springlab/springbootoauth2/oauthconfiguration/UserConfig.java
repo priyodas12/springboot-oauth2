@@ -17,7 +17,7 @@ public class UserConfig  extends GlobalAuthenticationConfigurerAdapter {
                 .withUser("priyo")
                 .password(passwordEncoder.encode("asdn*&&23"))
                 .roles("USER","ADMIN","DEVMANAGER")
-                .authorities("CAN_READ","CAN_WRITE","CAN_DELETE")
+                .authorities("CAN_READ")
                 .and()
                 .withUser("priya")
                 .password(passwordEncoder.encode("mvcbn*&&23"))
