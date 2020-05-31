@@ -43,7 +43,7 @@ public class Oauth2Config extends WebSecurityConfigurerAdapter implements Author
     }
 
     @Override
-    public void configure(AuthorizationServerEndpointsConfigurer auth) throws Exception {
-        auth.authenticationManager(authenticationManager);
+    public void configure(AuthorizationServerEndpointsConfigurer authcheck) throws Exception {
+        authcheck.authenticationManager(authenticationManager);
     }
 }
