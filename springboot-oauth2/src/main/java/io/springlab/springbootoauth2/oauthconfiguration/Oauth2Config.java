@@ -28,6 +28,8 @@ public class Oauth2Config extends WebSecurityConfigurerAdapter implements Author
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
 
+        security.checkTokenAccess("permitAll()");
+
     }
 
     @Override
